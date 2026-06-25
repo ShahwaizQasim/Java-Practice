@@ -45,24 +45,59 @@ public class Main {
             System.out.println("They are different strings");
         }
 
-
-        // Substring 
+        // Substring
         String FatherName = "Qasim Ali";
 
-        // Java me substring() method kisi string ka hissa (portion) nikalne ke liye use hota hai.
-        System.out.println(FatherName.substring(6 ));
-
+        // Java me substring() method kisi string ka hissa (portion) nikalne ke liye use
+        // hota hai.
+        System.out.println(FatherName.substring(0, 6));
 
         // Type Casting
-        // ParseInt 
-        // String convert to number 
+        // ParseInt
+        // String convert to number
         String str = "123";
         int number = Integer.parseInt(str); // Integer.parseInt(str) string ko int me convert karta hai.
         System.out.println(number);
-        
+
         int number1 = 123;
         String str1 = Integer.toString(number1); // Integer.toString(number1) int ko string me convert karta hai
         System.out.println(str1);
+
+        // Problems
+
+        // Q1) Take an array of Strings input from the user & find the cumulative
+        // (combined) length of all those strings.
+        int arraySize = sc.nextInt();
+        sc.nextLine();
+        // String array[] = new String[arraySize];
+        int toLength = 0;
+
+        for (int i = 0; i < arraySize; i++) {
+            // array[i] = sc.nextLine();
+            // toLength += array[i].length();
+        }
+
+        System.out.println(toLength);
+
+        // Q2) Input a string from the user. Create a new string called ‘result’ in
+        // which
+        // you will replace the letter ‘e’ in the original string with letter ‘i’.
+        // Example :
+        // original = “eabcdef’ ; result = “iabcdif”
+        // Original = “xyz” ; result = “xyz”
+
+        String character = sc.nextLine();
+        String result = "";
+        for (int i = 0; i < character.length(); i++) {
+            if (character.charAt(i) == 'e') {
+                result += 'i';
+            } else {
+                result += character.charAt(i);
+            }
+        }
+        System.out.println(result);
+        // String replaceString = character.replace('e', 'i');
+        // System.out.println(replaceString);
 
     }
 }
