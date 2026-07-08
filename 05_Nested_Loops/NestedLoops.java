@@ -135,12 +135,12 @@ public class NestedLoops {
             }
             System.out.println();
         }
-        // Output 
-//       *****
-//    *****
-//   *****
-//  *****
-// *****
+        // Output
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
 
     }
 }
